@@ -33,6 +33,7 @@ h6 {
 
 h3 {
     font-size: 28px;
+    margin-top: 10px;
     margin-bottom: 20px;
     color: #666;
 }
@@ -229,10 +230,10 @@ a:hover {
 }
 
 .carousel .item {
-    -webkit-transition: opacity 2s;
-    -moz-transition: opacity 5s;
-    -ms-transition: opacity 5s;
-    -o-transition: opacity 5s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    -ms-transition: opacity 3s;
+    -o-transition: opacity 3s;
     transition: opacity 3s;
 }
 
@@ -258,6 +259,7 @@ a:hover {
 /*Facebook box*/
 fb-wrap {
     display: inline-block;
+    margin: auto;
 }
 
 

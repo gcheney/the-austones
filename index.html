@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+    
 <body>
+    <!-- Facebook integration script -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -21,6 +23,7 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    
     <!-- Header Starts -->
     <div class="navbar-wrapper ">
         <div class="container">
@@ -56,18 +59,19 @@
             </div>
         </div>
     </div>
-    <!-- #Header Starts -->
+    <!-- #Header Ends -->
     
-    <!-- slider -->
+    <!-- carousel start -->
     <div id="myCarousel" class="carousel slide hidden-xs">
         <div class="carousel-inner">
-            <div class="active item carousel-fade"><img src="assets/img/carousel_0.jpg" alt="" /></div>
-            <div class="item carousel-fade"><img src="assets/img/carousel_1.jpg" alt="" /></div>
-            <div class="item carousel-fade"><img src="assets/img/carousel_2.jpg" alt="" /></div>
-            <div class="item carousel-fade"><img src="assets/img/carousel_3.jpg" alt="" /></div>
+            <div class="active item carousel-fade"><img src="assets/img/carousel_0.jpg" alt="The Band" /></div>
+            <div class="item carousel-fade"><img src="assets/img/carousel_1.jpg" alt="The Band" /></div>
+            <div class="item carousel-fade"><img src="assets/img/carousel_2.jpg" alt="The Band" /></div>
+            <div class="item carousel-fade"><img src="assets/img/carousel_3.jpg" alt="The Band" /></div>
+            <div class="item carousel-fade"><img src="assets/img/carousel_4.jpg" alt="The Band" /></div>
         </div>
     </div>
-    <!-- slider -->
+    <!-- carousel end -->
 
     <!-- overlay -->
     <div class="container overlay">
@@ -101,7 +105,7 @@
             </div>
             <div class="row">			
                 <div class="col-lg-4 col-sm-4  col-xs-12">
-                    <img src="assets/img/about_kevin.jpg" class="img-responsive" alt="about"/>
+                    <img src="assets/img/about_kevin.jpg" class="img-responsive" alt="kevin"/>
                 </div>
                 <div class="col-lg-5 col-sm-8  col-xs-12">
                     <h3>Kevin Cheney</h3>
@@ -109,19 +113,19 @@
                     <p>A long time Austinite and veteran of the Austin music scene, Kevin has played in numerous local bands including Jumpstart, The Crawlers, Bad Influence, and The Burners. Often seen at the local blues jams around town he can't stand still when the band is jumpin' and loves to belt out the blues. Learned to play blues harp walkin' the railroad tracks and Jethro Tull got him interested in playing flute which adds a special touch to the band's repertoire. Howlin' Wolf, Paul Butterfield, Slim Harpo, and Little Walter are artist that have had the greatest influence on him musically.</p>
                 </div>
             </div>
-            <div class="row">				
+            <div class="row">	
+                <div class="col-lg-4 col-sm-4  col-xs-12">
+                    <img src="assets/img/about_jeff.jpg" class="img-responsive" alt="jeff"/>
+                </div>
                 <div class="col-lg-5 col-sm-8  col-xs-12">
                     <h3>Jeff Grant</h3>
                     <h5>Guitars and Vocals</h5>
                     <p>Discovered blues as a teenager. Though well-versed in traditional rock, blues rock and Southern rock, Jeff has the blues and loves playing them too. Steve Royal - Drums, Vocal: Originally from Sacramento by way RCA/Grunt Records San Francisco, played with members of "The Wrecking Crew" Gold Star Recording LA, played on New Orleans famous Bourbons St for years before and after hurricane Katrina. Now he is in The Music Capitol of The World - Austin, Texas.</p>
                 </div>
-                <div class="col-lg-4 col-sm-4  col-xs-12">
-                    <img src="assets/img/about_jeff.jpg" class="img-responsive" alt="about"/>
-                </div>
             </div>
             <div class="row">			
                 <div class="col-lg-4 col-sm-4  col-xs-12">
-                    <img src="assets/img/about_bassman.jpg" class="img-responsive" alt="about"/>
+                    <img src="assets/img/about_bassman.jpg" class="img-responsive" alt="jackie"/>
                 </div>
                 <div class="col-lg-5 col-sm-8  col-xs-12">
                     <h3>Jackie Newhouse</h3>
@@ -156,29 +160,33 @@
             </div>
             <!--Events Ends-->
 
-            <!-- Facebook -->
-            <div class="fb-wrap text-center">
-                <h3 class="text-center">Like Us on Facbook</h3>
-                <div class="fb-like-box text-center" data-href="https://www.facebook.com/KevinTheKrawlers/" data-width="992" data-show-faces="true" data-show-border="false" data-colorscheme="light" data-stream="false" data-header="false"></div>
-            </div>
-            <!-- Facebook -->
-
             <!--Contact Starts-->
             <div id="contact" class="spacer">
+                <!-- Facebook Starts-->
+                <div class="fb-wrap text-center">
+                    <h3 class="text-center">Like Us on Facbook</h3>
+                    <div class="fb-like-box text-center" data-href="https://www.facebook.com/KevinTheKrawlers/" data-width="992" data-show-faces="true" data-show-border="false" data-colorscheme="light" data-stream="false" data-header="false"></div>
+                </div>
+                <!--Facebook Ends-->
+                <!-- Contact Form -->
                 <div class="contactform center">
                     <h3><span class="glyphicon glyphicon-envelope"></span>Interested in booking us for a show?</h3>
-                        <div class="row">      
-                            <div class="col-sm-6 col-sm-offset-3 ">
-                                <h4>Get in touch or<br><b>Just say Hello!</b></h4>
+                    <div class="row">      
+                        <div class="col-sm-6 col-sm-offset-3 ">
+                            <h4>Contact us to play at your<br><b>Event or Venue!</b></h4>
+                            <form action="https://formspree.io/your@email.com" method="POST">
                                 <input type="text" placeholder="Name">
                                 <input type="text" placeholder="Email">
                                 <textarea rows="5" placeholder="Message"></textarea>
                                 <button class="btn btn-warning bgcolor">Send</button>
-                            </div>
+                            </form>
                         </div>
+                    </div>
                 </div>
-                <!--Contact Ends-->
+                <!-- Contact Form Ends-->
             </div>        
+            <!--Contact Ends-->
+            
         <!-- blockblack -->
         </div>
     <!-- overlay -->
