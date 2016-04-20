@@ -20,7 +20,9 @@ $(window).scroll(function() {
     if($(window).scrollTop() < 300 ){
          carousel.fadeIn("slow");
    } else {
-         carousel.fadeOut("slow");
+         carousel.fadeOut("slow", function(){
+             carousel.stop(true, true);
+         });
    }
     
     $('#about,.album,.blogevent ul li').each(function(){
