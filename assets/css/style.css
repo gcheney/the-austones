@@ -219,6 +219,7 @@ a:hover {
 
 .carousel {
     position: absolute;
+    margin-top: auto;
     top: 0;
     left: 0;
     right: 0;
@@ -252,11 +253,13 @@ a:hover {
     width: 100%;
 }
 
-
 /*background slider*/
 
+/*Facebook box*/
+fb-wrap {
+    display: inline-block;
+}
 
-/*animation*/
 
 #about,
 .album,
