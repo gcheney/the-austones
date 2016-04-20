@@ -20,12 +20,12 @@ $(window).scroll(function() {
     if($(window).scrollTop() < 300 ){
          carousel.fadeIn("slow");
    } else {
-         carousel.fadeOut("slow", function(){
+         carousel.fadeOut("slow", function() {
              carousel.stop(true, true);
          });
    }
     
-    $('#about,.album,.blogevent ul li').each(function(){
+    $('#about,.album,.blogevent ul li').each(function() {
     var elementPos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
@@ -35,7 +35,7 @@ $(window).scroll(function() {
     });
 
 
-    $('h3,h4').each(function(){
+    $('h3,h4').each(function() {
     var elementPos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
