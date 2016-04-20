@@ -9,8 +9,6 @@
                  changeHash: true,
                  scrollSpeed: 500
             });
-
-
 });
 
 
