@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 
-  // animation
+// scroll animation
 $(window).scroll(function() {
     //carousel fade
     var carousel = $('#myCarousel');
@@ -25,22 +25,23 @@ $(window).scroll(function() {
          });
    }
     
+    // fade in on scroll 
     $('#about,.album,.blogevent ul li').each(function() {
-    var elementPos = $(this).offset().top;
+        var elementPos = $(this).offset().top;
 
-    var topOfWindow = $(window).scrollTop();
-      if (elementPos < topOfWindow + 400) {
-        $(this).addClass("animated fadeInUp");
-      }
+        var topOfWindow = $(window).scrollTop();
+          if (elementPos < topOfWindow + 400) {
+            $(this).addClass("animated fadeInUp");
+          }
     });
 
 
     $('h3,h4').each(function() {
-    var elementPos = $(this).offset().top;
+        var elementPos = $(this).offset().top;
 
-    var topOfWindow = $(window).scrollTop();
-      if (elementPos < topOfWindow+500) {
-        $(this).addClass("animated fadeInUp");
-      }
+        var topOfWindow = $(window).scrollTop();
+          if (elementPos < topOfWindow+500) {
+            $(this).addClass("animated fadeInUp");
+          }
     });
 });
